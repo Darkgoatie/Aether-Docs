@@ -13,7 +13,7 @@ const Lottery = () => {
             
             <ul>
                 <li>
-                    <h3>!?lotto add [TicketCount] [@MentionUser]</h3>
+                    <h3>lotto add [TicketCount] [@MentionUser]</h3>
                     <p>Adds someone to the lottery.</p>
                     <p>{">>"} !?lotto add 25 @Darkgoatie</p>
                 </li>

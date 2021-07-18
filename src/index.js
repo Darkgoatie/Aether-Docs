@@ -15,6 +15,17 @@ import AllCmds from './Components/AllCmds';
 import Auction from './Components/Cmds/Auction';
 import Giveaway from './Components/Cmds/Giveaway';
 import Lottery from './Components/Cmds/Lottery';
+import Vouch from './Components/Cmds/Vouch';
+import Timer from './Components/Cmds/Timer';
+import Stats from './Components/Cmds/Stats';
+import Role from './Components/Cmds/Role';
+import User from './Components/Cmds/User';
+import Message from './Components/Cmds/Message';
+import Channel from './Components/Cmds/Channel';
+import Server from './Components/Cmds/Server';
+import Invite from './Components/Cmds/Invite';
+import Dono from './Components/Cmds/Donation';
+import Prefix from './Components/Cmds/Prefix';
 
 ReactDOM.render(
 <React.StrictMode>
@@ -42,6 +53,39 @@ ReactDOM.render(
         </Route>
         <Route exact path="/commands/lottery">
           <Lottery />
+        </Route>
+        <Route exact path="/commands/vouch">
+          <Vouch />
+        </Route>
+        <Route exact path="/commands/timer">
+          <Timer />
+        </Route>
+        <Route exact path="/commands/stats">
+          <Stats />
+        </Route>
+        <Route exact path="/commands/role">
+          <Role />
+        </Route>
+        <Route exact path="/commands/user">
+          <User />
+        </Route>
+        <Route exact path="/commands/message">
+          <Message />
+        </Route>
+        <Route exact path="/commands/channel">
+          <Channel />
+        </Route>
+        <Route exact path="/commands/server">
+          <Server />
+        </Route>
+        <Route exact path="/commands/invite">
+          <Invite />
+        </Route>
+        <Route exact path="/commands/donation">
+          <Dono />
+        </Route>
+        <Route exact path="/commands/prefix">
+          <Prefix />
         </Route>
         <Route>
           <Redirect to="/commands/all" />
