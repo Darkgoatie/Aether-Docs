@@ -3,119 +3,110 @@
 * {
   font-family: "Quicksand";
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
-  margin: 10px;
-  border: outset gray;
-  background-color: lightgray;
-  border-radius: 10px;
+  margin: 20px;
 }
 
-a:hover {
-  border: outset rgba(128, 128, 128, 0);
-  background-color: gray;
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
 }
 
-a:active {
-  border: inset gray;
+.link {
+  height: 30px;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  display: flex;
 }
 
-.footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 50%;
-  height: 50%;
-  background-color: rgb(138, 138, 138);
+/* Hide extra text */
+.mask {
+  position: relative;
+  padding: 0;
+  height: 20px;
+
+  /*  Remove overflow to see how it works　:) */
+  overflow: hidden;
+}
+
+.link-container {
+  transition: transform 0.4s ease;
+}
+
+.title {
+  display: block;
+
+  /*  Set same font-size and line height  */
+  font-size: 20px;
+  line-height: 20px;
+
+  transition: transform 0.4s ease;
+}
+
+.link-title1 {
+  transform-origin: right center;
   color: white;
 }
 
-.footer p {
+.link-title2 {
+  transform-origin: left center;
+  transform: rotate(20deg);
   color: white;
 }
 
-div {
-  background-color: lightgray;
-  border-radius: 12px;
+.link:hover .link-container {
+  transform: translateY(-20px);
 }
 
-.NavBar {
-  background-color: rgb(165, 165, 165);
-  border-radius: 30px;
-  margin-left: 30%;
-  margin-right: 30%;
-  padding: 20px;
+/* Rotate texts a little bit */
+.link:hover .link-title1 {
+  transform: rotate(20deg);
 }
 
-.NavBar a {
-  padding-right: 10%;
-  padding-left: 10%;
-  margin: 30px;
-  max-width: 100px;
-  max-height: 20px;
-  min-width: 100px;
-  min-height: 20px;
-}
-
-body {
-  background-color: rgb(27, 27, 27);
-}
-
-.About div {
-  background-color: rgb(151, 151, 151);
-}
-
-/*
-.About h2 {
-  padding-left: 100px;
-}
-
-.About p {
-  padding-right: 70px;
-  padding-left: 70px;
-  padding-bottom: 30px;
-  margin-right: 300px;
-}
-*/
-
-.About p {
-  margin-left: 70px;
-  margin-right: 70px;
-}
-
-.Split div {
-  border-bottom: black 3px;
+.link:hover .link-title2 {
+  transform: rotate(0);
 }
 
 hr {
   width: 69%;
 }
 
-.dependencies code {
-  background-color: #eee;
-  border: 1px solid #999;
-  display: block;
-  padding: 20px;
+.AllCmds a:link,
+.LinksToSee a:link {
+  color: #265301;
 }
 
-.Features li,
-.Features h1 {
-  text-align: left;
-  padding-left: 30px;
-  padding: 10px;
+.AllCmds a:visited,
+.LinksToSee a:visited {
+  color: #437a16;
 }
 
-.Features span {
-  font-size: xx-large;
+.AllCmds a:focus,
+.LinksToSee a:focus {
+  border-bottom: 1px solid;
+  background: #bae498;
 }
 
-.Features li {
-  font-size: x-large;
+.AllCmds a:hover,
+.LinksToSee a:hover {
+  border-bottom: 1px solid;
+  background: #cdfeaa;
 }
 
-.usage div {
-  /*  color: greenyellow; */
-  background-color: black;
-  border-radius: 3px;
+.AllCmds a:active,
+.LinksToSee a:active {
+  background: #265301;
+  color: #cdfeaa;
 }
