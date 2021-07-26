@@ -25,7 +25,7 @@ const Auction = () => {
                 <li>
                     <h3>auc offer [New Bid]</h3>
                     <p>Bids to the auction that is active in the current channel.</p>
-                    <p>{">>"} !?auc bid 1500</p>
+                    <p>{">>"} !?auc offer 1500</p>
                 </li>
                 <li>
                     <h3>auc setwinner [@MentionUser]</h3>
