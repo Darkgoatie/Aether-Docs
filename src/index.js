@@ -26,7 +26,7 @@ render(
         <Route exact path="/support">
           <meta
             httpEquiv="refresh"
-            content="0; URL='https://discord.gg/Dn3VJmP3Ba'"
+            content="0; URL='https://discord.gg/5HJJCNzrzB'"
           />
         </Route>
         <Route exact path="/donate">
